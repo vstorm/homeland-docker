@@ -35,6 +35,9 @@ services:
         max-size: "1g"
         max-file: "10"
     volumes:
+      - ./homeland/app:/home/app/homeland/app
+      - ./homeland/config:/home/app/homeland/config
+      - ./homeland/db:/home/app/homeland/db
       - ./shared/.well-known:/home/app/homeland/public/.well-known
       - ./data/uploads:/home/app/homeland/public/uploads
       - ./shared/cache/uploads-thumb:/home/app/cache/uploads-thumb
