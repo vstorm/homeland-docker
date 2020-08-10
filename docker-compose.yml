@@ -38,6 +38,7 @@ services:
       - ./homeland/app:/home/app/homeland/app
       - ./homeland/config:/home/app/homeland/config
       - ./homeland/db:/home/app/homeland/db
+      - ./homeland/lib:/home/app/homeland/lib
       - ./shared/.well-known:/home/app/homeland/public/.well-known
       - ./data/uploads:/home/app/homeland/public/uploads
       - ./shared/cache/uploads-thumb:/home/app/cache/uploads-thumb
